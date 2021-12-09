@@ -1,0 +1,28 @@
+.button {
+  width: 17rem;
+  height: 5rem;
+  background: var(--first-color);
+  border: 0;
+  color: var(--title-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: .2s;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+  }
+
+  &:hover {
+    border: 2px solid var(--first-color);
+    background: transparent;
+  }
+}
+
+.button + .button {
+  margin-left: 1rem;
+}

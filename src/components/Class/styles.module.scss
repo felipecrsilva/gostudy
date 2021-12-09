@@ -1,0 +1,145 @@
+.classContainer {
+  background: var(--body-color);
+  border: 3px solid var(--container-color);
+  border-radius: 0.8rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem 2rem 1rem 2rem;
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+  
+        margin-right: 1rem;
+      }
+
+      div {
+        strong {
+          display: block;
+          color: var(--text-color);
+        }
+        span {
+          display: block;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  > p {
+    padding: 1rem 2rem 2rem 2rem;
+
+    strong {
+      display: block;
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem;
+
+    border-top: 3px solid var(--container-color);
+
+    strong {
+      margin-left: 0.5rem;
+    }
+
+    button {
+      width: 10rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.classContainer + .classContainer {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .classContainer {
+    header {
+      div:first-child {
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .classContainer {
+    header {
+      div:first-child {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    > p {
+      height: 5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    footer {
+      font-size: 0.90rem;
+
+      button {
+        width: 9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .classContainer {
+    font-size: 0.90rem;
+
+    header {
+      padding: 1rem 1rem 0.5rem 1rem;
+    }
+
+    > p {
+      padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    footer {
+      padding: 1rem;
+
+      button {
+        width: 7rem;
+        font-size: 0.90rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .classContainer {
+    footer {
+      button {
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

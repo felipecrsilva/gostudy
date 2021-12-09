@@ -1,0 +1,38 @@
+.classesListContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  padding: 0 10rem;
+
+  overflow: hidden;
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 3rem;
+      color: var(--title-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .classesListContainer {
+    > header {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .classesListContainer {
+    padding: 0 5rem;
+  }
+}
