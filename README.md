@@ -5,7 +5,24 @@
 
 ---
 
+## 📺 Preview
+
 <img src="/.github/project.png" alt="GoStudy">
+<img src="/.github/createclass.png" alt="GoStudy">
+<img src="/.github/classeslist.png" alt="GoStudy">
+
+## 📖 About this project
+
+Project developed by me to facilitate the connection of teachers and students, with the following functionalities:
+- Authentication with GitHub with Next-Auth
+- Create a class
+- Listing of the classes
+
+To improve the project and the user experience I also added:
+- Supabase as database
+- Toastify to improve the user experience
+- React-hook-form for better form handling
+- Responsiveness for different devices
 
 ## 🔨 Tecnologies
 
@@ -13,6 +30,7 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [Next-Auth](https://next-auth.js.org/)
 - [Supabase](https://supabase.com/)
+- [SASS](https://sass-lang.com/)
 
 ## 💻 Getting started
 
